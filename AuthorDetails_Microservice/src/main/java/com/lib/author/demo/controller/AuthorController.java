@@ -41,10 +41,10 @@ public class AuthorController {
 		
 		List<AuthorEntity> authorntity=authorService.gateAuthorDetails();
 		
-//		apiRes.setResponseMessage("saved successfully");
-//		apiRes.setResponseCode(200);
-//		apiRes.setResponseError(false);
-//		apiRes.setData(authorntity);
+		apiRes.setResponseMessage("saved successfully");
+		apiRes.setResponseCode(200);
+		apiRes.setResponseError(false);
+		apiRes.setData(authorntity);
 		
 		return new ResponseEntity<>(authorntity,HttpStatus.OK);
 	}

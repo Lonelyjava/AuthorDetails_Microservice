@@ -43,6 +43,15 @@ public class AuthorServiceImpl implements AuthorService {
 		authorEntity.setAuthorName("james ghosling");
 		authorEntity.setCreatedDate(localDate);
 		authorEntity.setId(1);
+		
+		AuthorEntity authorEntity1 = new AuthorEntity();
+		authorEntity1.setAuthormail("author@gmail.com");
+		authorEntity1.setAuthorMobile("89892314234");
+		LocalDateTime localDate1 = LocalDateTime.now();
+		authorEntity1.setAuthorName("james ghosling");
+		authorEntity1.setCreatedDate(localDate1);
+		authorEntity1.setId(2);
+		authorList.add(authorEntity1);
 		authorList.add(authorEntity);
 		
 		return authorList;
